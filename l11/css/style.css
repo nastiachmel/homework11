@@ -1,0 +1,252 @@
+.mainer{
+  width: 56%;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  /* margin: 0 -3%; */
+  padding: 5% 0 9% 0;
+  align-items: center;
+}
+.header__col{
+  /* padding: 0 3%; */
+
+}
+.header__col--stretch{
+  flex-grow: 1;
+}
+.logo__img{
+  display: inline-block;
+  cursor: pointer;
+}
+.logo__link:hover{
+  opacity: 0.7;
+}
+.navigation{
+  margin: 0 12% 0 0;
+  text-align: right;
+}
+.navigation__link{
+  margin: 0 9% 0 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+display: inline-block;
+padding: 1% 0;
+border-bottom: 1px solid  transparent;
+cursor: pointer;
+}
+.navigation__link--margin{
+  margin-right: 0;
+}
+.navigation__link:hover ,
+.navigation__link--active
+{
+  border-bottom-color: #ffffff;
+}
+.burger{
+  width: 22px;
+  height: 1px;
+  background-color: white;
+  position: relative;
+ }
+.burger::before,
+.burger::after{
+  content: '';
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: 0;
+  height: 1px;
+  }
+.burger::before{
+  top: auto;
+  bottom: -6px;
+
+}
+.block__card{
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+}
+.block__card:before,
+.block__card:after{
+  background-color: rgba(255, 255, 255, 0.2);
+  content: '';
+  z-index: -1;
+  position: absolute;
+}
+.block__card:before{
+  width: 100%;
+  height: calc(100% - 30px); 
+  padding: 0 15px;
+  left: -15px;
+  top: 15px;
+}
+.block__card:after{  
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: 0 30px;
+  left: -30px;
+  top: 30px;
+}
+.block__carousel{
+  background-color: #edeaeb;
+  position: relative;
+}
+.block__card__col{
+  flex-grow: 1;
+}
+.block__carousel__img{
+  display: block;
+  width: 100%;
+}
+.block__carousel__img__mini{
+  position: absolute;
+  bottom: 8%;
+  width: 42%;
+  margin: 0 0 0 32%;
+
+  }
+
+.block__carousel__img__mini--position{
+  padding-right: 3%;
+}
+
+.block__card--data{
+  padding: 16% 14% 0 11%;
+  position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.block__card__col--data{
+  width: 35%;
+  flex-grow: 0;
+}
+.block__title{
+  overflow-wrap: break-word;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.label__title{
+  text-align: center;
+  width: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #ffa60d;
+  padding: 5px;
+  margin-bottom: 4%;
+overflow-wrap: break-word;
+}
+.block__title--color{
+  color: #5e4fff;
+}
+.product__name{
+font-size: 12px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+.block__product{display: flex;
+  padding-bottom: 6%;
+    display: flex;
+    padding-top: 6%;
+
+}
+.product__rating{
+  padding: 2px 0 0 15px;
+}
+.product__rating .input-radio{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.product__rating  .label-radio{
+  width: 14px;
+  height: 10px;
+  float: right;
+  background-image: url('../img/star1.png');
+  }
+.product__rating .label-radio:hover,
+.product__rating .input-radio:checked + .label-radio,
+.product__rating  .label-radio:hover ~.label-radio,
+.product__rating .input-radio:checked ~.label-radio
+{
+  background-position:  0 -11px;
+}
+   .block__price{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+   }
+
+   .block__product__size{
+    padding-bottom: 13%;
+    padding-top: 11%;
+   }
+   .radiobox{
+     
+    padding-top: 6%;
+    margin-left: -8%;
+   }
+   .radio{
+     width: 3px;
+     visibility: hidden;
+     margin-bottom: 10px;
+   }
+   .radio__size{
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 2%;
+    cursor: pointer;
+    }
+ 
+   .radio:checked+ .radio__size{
+     border-color: black;
+   }
+   .button{
+     cursor: pointer;
+     width: 63%;
+     font-family: 'Roboto Condensed', sans-serif;
+     font-size: 12px;
+     border:1px solid #a200b8;
+     background-color: #a200b8;
+     color: white;
+     padding:  5% 0;
+     overflow-wrap: break-word;
+   }
+   .button__modified{
+     border:1px solid;
+     background-color: white;
+     color: black;
+     margin-top: 5%;
+     margin-bottom: 5%;
+   }
+   .button:hover{
+     background-color: hsl(293, 67%, 68%);
+     border-color: hsl(293, 67%, 68%);
+     color: white;
+   }
+   .close{
+     cursor: pointer;
+    width: 18px;
+    height: 2px;
+    background-color: #dfdfdf;
+    position: absolute;
+    top: 5%;
+    left: 84%;
+transform: rotate(45deg); 
+   }
+   .close:before{
+    background-color: #dfdfdf;
+    content: '';
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 100%;
+  cursor: pointer;
+    height: 2px;
+    
+}
