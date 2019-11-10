@@ -12,22 +12,33 @@
   src: url('../font/Pacifico-Regular.woff'),
   url('../font/9119.woff2');
 }
+.wrap{
+  max-width: 1500px;
+  margin: 0 auto;
+}
 .mainer{
- 
   background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  margin-bottom: -20px;
+  /* background-image: url(../img/header.jpg); */
+  padding: 0 15px;
 }
 
 .header{
   display: flex;
   padding: 55px 0 260px 0;
   align-items: center;
+  justify-content: space-between;
 }
 .header__col{
-  padding: 0 0 0 165px;
+  padding-right: 15px;
+  /* padding: 0 0 0 165px; */
 }
-.header__col--stretch{
-  padding-left: 400px;
-}
+
 .logo__title{
   font-family: 'Pacifico';
   font-size: 50px;
@@ -60,7 +71,7 @@
   border-top-color: #ff6033;  
 }
 .text{
-  padding: 0px 0 345px  165px;
+  padding: 0px 0 345px  0px;
 }
 .text__title{
   font-family: 'Raleway-heavy';
@@ -71,7 +82,7 @@
   font-size: 17px;
   font-weight: 300;
   display: block;
-  width: 31%;
+  width: 300px;
   line-height: 20px;
 }
 .button{
@@ -91,13 +102,19 @@
 }
 .footer{
   background-color: #00baba;
-  padding: 65px 0 0 140px;
+  /* padding: 65px 0 0 140px; */
   display: flex; 
+}
+.wrap--fix{
+  display: flex; 
+}
+.img{
+  width: 50%;
 }
 .footer__text{ 
   color: white;
-  width: 505px;
-  padding-left: 95px;
+  /* width: 505px;
+  padding-left: 95px; */
   padding-top: 120px;
 }
 .footer__title{
@@ -111,3 +128,33 @@
   line-height: 27px;
   font-size: 17px;
 }
+@media screen and (max-width:768px){
+  .header{
+    flex-direction: column;
+  }
+  .header__col--stretch{
+    flex-direction: column;
+  }
+  .text{
+    text-align: center;
+  }
+  .text__content{
+    margin: 0 auto;
+  }
+  .footer{
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .img{
+    margin: 0 auto;
+  }
+  .footer__text{
+    padding: 0;
+  }
+
+}
+@media screen and (max-width:990px){
+
+}
+
